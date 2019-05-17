@@ -7,33 +7,20 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn run serve
+yarn dev
 ```
 
-### Compiles and minifies for production
+### Compiles, minifies and serves for production
 ```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
+yarn build
+yarn serve
 ```
 
-### Lints and fixes files
-```
-yarn run lint
-```
+## Requirements
+- `http-server`: to serve production server
+- choose PWA support from `vue create` menu
+- `@vue/cli-plugin-pwa` &rarr; automatically adds `workbox`
 
-### Run your end-to-end tests
-```
-yarn run test:e2e
-```
-
-### Run your unit tests
-```
-yarn run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Caveats
+- for see it in work, use production mode
+- when accessing it on browser, must use `incognito` mode. otherwise it'll mangle all caches, as many dev apps use localhost.

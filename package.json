@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
+    "serve": "http-server ./dist",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
@@ -29,6 +30,7 @@
     "chai": "^4.1.2",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "http-server": "^0.11.1",
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.5.21"
